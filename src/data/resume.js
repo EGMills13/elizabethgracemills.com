@@ -9,7 +9,7 @@ export const resume = {
   },
   clearance: "Active Public Trust Clearance",
   summary:
-    "Certified SAFe Scrum Master & Release Manager with 20 years of servant leadership experience, including direct experience supporting Department of Veterans Affairs (VA) initiatives. Expert in coordinating complex software development lifecycles (SDLC) across multiple teams, managing stakeholder alignment, and ensuring rigorous documentation compliance. Proven ability to drive high-impact facilitation and process improvement within dynamic, remote Federal environments.",
+    "Certified SAFe Agilist and Release Manager with 20 years of experience leading complex software delivery across large, multi-team programs. Proven track record of coordinating end-to-end release lifecycles, driving cross-functional stakeholder alignment, and implementing process improvements that produce measurable results — including a 55% reduction in major incidents within two quarters. Skilled at translating strategic goals into actionable roadmaps, facilitating PI planning, and guiding distributed teams through iterative delivery cycles. Equally effective in Release Manager and Product Manager capacities, with deep experience in federal environments and the adaptability to thrive in fast-moving private sector organizations.",
   skills: [
     {
       label: "Release Management",
