@@ -1,0 +1,238 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #1a2a4a;
+  --navy-light: #243352;
+  --teal: #2d7d8a;
+  --teal-light: #e8f4f6;
+  --gold: #c9a84c;
+  --text: #1f1f1f;
+  --text-muted: #555;
+  --border: #d0dce8;
+  --bg: #f7f9fc;
+  --white: #ffffff;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── Layout ── */
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+/* ── Section ── */
+.section { margin-top: 40px; }
+
+.section-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 20px;
+}
+
+/* ── Summary ── */
+.summary-text {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  background: var(--white);
+  border-left: 4px solid var(--teal);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ── Skills ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.skill-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s;
+}
+
+.skill-card:hover { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
+
+.skill-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--teal);
+  margin-bottom: 4px;
+}
+
+.skill-value {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* ── Experience ── */
+.employer-block { margin-bottom: 32px; }
+
+.employer-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.employer-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.employer-location {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.role-block {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.role-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.role-title {
+  font-weight: 600;
+  font-size: 0.97rem;
+  color: var(--navy);
+}
+
+.role-dates {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--teal);
+  padding: 2px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.role-bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.role-bullets li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.role-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.8rem;
+  top: 2px;
+}
+
+/* ── Certifications ── */
+.cert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.cert-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.cert-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.cert-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+
+.cert-org {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ── Education ── */
+.edu-list { display: flex; flex-direction: column; gap: 12px; }
+
+.edu-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px 14px 20px;
+  border-left: 4px solid var(--gold);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.edu-degree {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--navy);
+}
+
+.edu-school {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .page { padding: 0 12px 48px; }
+  .employer-header { flex-direction: column; }
+  .role-header { flex-direction: column; gap: 6px; }
+}
+
+@media print {
+  body { background: white; }
+  .role-block, .skill-card, .cert-card, .edu-card { break-inside: avoid; }
+}
