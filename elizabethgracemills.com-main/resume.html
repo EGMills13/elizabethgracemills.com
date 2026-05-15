@@ -303,7 +303,9 @@
       contact: {
         phone: "814-504-1994",
         email: "elizabethgracemills@gmail.com",
-        location: "Metro Atlanta, GA"
+        location: "Metro Atlanta, GA",
+        github: "https://github.com/EGMills13",
+        linkedin: "https://www.linkedin.com/in/lizgmills/"
       },
       clearance: "Active Public Trust Clearance",
       summary: "Certified SAFe Scrum Master & Release Manager with 20 years of servant leadership experience, including direct experience supporting Department of Veterans Affairs (VA) initiatives. Expert in coordinating complex software development lifecycles (SDLC) across multiple teams, managing stakeholder alignment, and ensuring rigorous documentation compliance. Proven ability to drive high-impact facilitation and process improvement within dynamic, remote Federal environments.",
@@ -443,6 +445,12 @@
                 <a href={`mailto:${contact.email}`}>{contact.email}</a>
               </ContactItem>
               <ContactItem icon="📍">{contact.location}</ContactItem>
+              <ContactItem icon="🐙">
+                <a href={contact.github} target="_blank" rel="noreferrer">github.com/EGMills13</a>
+              </ContactItem>
+              <ContactItem icon="💼">
+                <a href={contact.linkedin} target="_blank" rel="noreferrer">linkedin.com/in/lizgmills</a>
+              </ContactItem>
             </div>
             <div>
               <span className="clearance-badge">🔒 {clearance}</span>
