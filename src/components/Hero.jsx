@@ -23,13 +23,13 @@ export default function Hero({ name, contact, clearance }) {
         <h1 className="hero-name">{name}</h1>
         <div className="hero-bar" />
         <div className="hero-contact">
-          <ContactItem icon="📞">
+          <ContactItem icon={<PhoneIcon />}>
             <a href={`tel:${contact.phone.replace(/\D/g, '')}`}>{contact.phone}</a>
           </ContactItem>
-          <ContactItem icon="✉️">
+          <ContactItem icon={<EmailIcon />}>
             <a href={`mailto:${contact.email}`}>{contact.email}</a>
           </ContactItem>
-          <ContactItem icon="📍">{contact.location}</ContactItem>
+          <ContactItem icon={<LocationIcon />}>{contact.location}</ContactItem>
         </div>
         <div className="hero-social">
           <a href={contact.github} target="_blank" rel="noreferrer" className="social-link" aria-label="GitHub">
@@ -42,6 +42,30 @@ export default function Hero({ name, contact, clearance }) {
         <span className="clearance-badge">🔒 {clearance}</span>
       </div>
     </header>
+  );
+}
+
+function PhoneIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/>
+    </svg>
+  );
+}
+
+function EmailIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+  );
+}
+
+function LocationIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+    </svg>
   );
 }
 
