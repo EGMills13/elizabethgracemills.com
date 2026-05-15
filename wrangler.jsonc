@@ -6,7 +6,7 @@
     "enabled": true
   },
   "assets": {
-    "directory": "elizabethgracemills.com-main"
+    "directory": "dist"
   },
   "compatibility_flags": [
     "nodejs_compat"
