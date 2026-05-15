@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "elizabethgracemills",
+  "compatibility_date": "2026-05-15",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "elizabethgracemills.com-main"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
